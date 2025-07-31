@@ -1,0 +1,76 @@
+:root {
+  --primary-green: #264f25;
+  --accent-gold: #c79c47;
+  --deep-brown: #3f2d10;
+  --soft-beige: #fdfaf4;
+  --light-gray: #f7f7f7;
+  --text-black: #333333;
+  --warm-white: #ffffff;
+
+  --font-primary: "Poppins", sans-serif;
+}
+
+.primary-green {
+  color: var(--primary-green);
+}
+
+.bg-primary-green {
+  background: var(--primary-green);
+}
+
+.accent-gold {
+  color: var(--accent-gold);
+}
+
+.bg-accent-gold {
+  background: var(--accent-gold);
+}
+
+.deep-brown {
+  color: var(--deep-brown);
+}
+
+.bg-deep-brown {
+  background: var(--deep-brown);
+}
+
+.soft-beige {
+  color: var(--soft-beige);
+}
+
+.bg-soft-beige {
+  background: var(--soft-beige);
+}
+
+.light-gray {
+  color: var(--light-gray);
+}
+
+.bg-light-gray {
+  background: var(--light-gray);
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+.bg-text-black {
+  background: var(--text-black);
+}
+
+.warm-white {
+  color: var(--warm-white);
+}
+
+.bg-warm-white {
+  background: var(--warm-white);
+}
+
+/* ///////////////////// */
+/* nav */
+/* ///////////////////// */
+.navbar-nav .nav-link.active,
+.nav-link:hover,
+.navbar-nav .nav-link.show {
+  color: var(--accent-gold);
+}
