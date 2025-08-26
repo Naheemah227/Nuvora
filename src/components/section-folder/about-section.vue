@@ -120,4 +120,16 @@ import logo from "../../assets/images/ChatGPT Image Jul 30, 2025, 08_59_38 PM.pn
 .about-box span {
   color: var(--accent-gold);
 }
+
+
+@media (max-width: 768px){
+  .about-box{
+ 
+   padding: 10px 40px;
+  }
+  .about-box p{
+  
+    font-size: 10px;
+}
+}
 </style>

@@ -39,6 +39,7 @@ const categories = [
 
 <style scoped>
 .container {
+  width: 100%;
   text-align: center;
   margin-top: 20px;
   padding: 30px 10px;
@@ -54,4 +55,14 @@ h1 span {
   justify-items: center;
   margin-top: 30px;
 }
-</style>
+@media(max-width: 768px){
+  .banner-container  h3,p{
+    font-size: 10px;
+    color: red;
+
+  }
+
+}
+
+
+</style> 

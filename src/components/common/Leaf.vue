@@ -32,6 +32,7 @@
   padding-top: 10px;
   padding-bottom: 5px;
   gap: 30px;
+  overflow: hidden;
 }
 
 .footer ul,

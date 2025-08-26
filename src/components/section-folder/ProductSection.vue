@@ -1,9 +1,9 @@
 <template>
   <section>
-    <div class="product-div"><h4 class="">Our Products</h4></div>
+    <div class="product-div text-center"><h4 class="">Our Products</h4></div>
     <div class="container-fluid row">
       <div class="col-12 col-md-8">
-        <h5 class="" style="font-size: 40px">
+        <h5 class="" style="font-size:40px; margin-bottom: 40px;">
           Our <span>Best Seller Products</span>
         </h5>
       </div>

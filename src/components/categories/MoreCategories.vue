@@ -58,9 +58,9 @@ const content = [
   justify-content: space-between; /* Space between text and image */
   align-items: center;
   padding: 20px;
-  width: 500px;
-  height: 350px;
-  border-radius: 20px;
+  /* width: 500px; */
+  /* height: 350px; */
+  /* border-radius: 20px; */
   background: var(--light-gray);
   overflow: hidden; /* Prevent overflow */
 }
@@ -98,5 +98,11 @@ button {
 }
 button span {
   color: white;
+}
+@media( max-width: 768px){
+  .container{
+     /* width: 100px; */
+
+  }
 }
 </style>
