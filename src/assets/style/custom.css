@@ -18,6 +18,14 @@
   background: var(--primary-green);
 }
 
+.light-gray {
+  color: var(--light-gray);
+}
+
+.bg-light-gray {
+  background: var(--light-gray);
+}
+
 .accent-gold {
   color: var(--accent-gold);
 }
@@ -71,6 +79,8 @@
 /* ///////////////////// */
 .navbar-nav .nav-link.active,
 .nav-link:hover,
-.navbar-nav .nav-link.show {
+.navbar-nav .nav-link.show,
+.RouterLink:hover ,
+span  {
   color: var(--accent-gold);
 }

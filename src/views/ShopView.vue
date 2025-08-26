@@ -1,13 +1,14 @@
 <template>
   <div>
-    <h2>Shop page</h2>
-    <ul>
-        <li>others-hero-section</li>
-        <li>products-section</li>
-    </ul>
+    <ProductSection :showButton="false" :products="products" />
+    <Leaf />
   </div>
 </template>
+<script setup>
+import Leaf from "@/components/common/Leaf.vue";
 
-<script setup></script>
-
-<style lang="scss" scoped></style>
+import ProductSection from "@/components/section-folder/ProductSection.vue";
+// Import the products array
+import { products } from "@/data/product.js";
+</script>
+<style scoped></style>

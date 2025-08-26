@@ -21,7 +21,7 @@
             <p class="navbar-nav mx-auto mb-2 mb-lg-0 text-white">
               Sign up and GET up to 20% OFF for your first order.
               <router-link
-                to="#"
+                to="signup"
                 class="ps-1 link-sign-up"
                 style="color: var(--accent-gold)"
               >

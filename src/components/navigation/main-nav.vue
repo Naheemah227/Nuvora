@@ -26,22 +26,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <RouterLink class="RouterLink" to="/">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Shop</a>
+              <!-- <a class="nav-link" aria-current="page" href="#">Shop</a> -->
+         <RouterLink class="RouterLink" to="/shop">Shop</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Skincare</a>
+              <!-- <a class="nav-link" aria-current="page" href="#">Skincare</a> -->
+            <RouterLink class="RouterLink" to="/skincare">SkinCare</RouterLink>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">MakeUp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Hair Care</a>
+                 <RouterLink  class="RouterLink" to ="/haircare">HairCare</RouterLink>
+
+
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About Us</a>
+              <!-- <a class="nav-link" aria-current="page" href="#">About Us</a> -->
+                 <RouterLink  class="RouterLink" to ="/about">About</RouterLink>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Blogs</a>
@@ -57,7 +62,7 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </div>                  
 </template>
 
 <script setup>
@@ -74,7 +79,7 @@ ul {
   align-items: center;
 }
 ul li {
-  display: block; /* or remove this rule completely */
+  display: block; 
   padding: 8px 10px;
 }
 .icons {
@@ -87,5 +92,9 @@ ul li {
   width: 40px;
   height: 40px;
   border-radius: 20px;
+}
+.RouterLink{
+    text-decoration: none; 
+  color: inherit;        
 }
 </style>
