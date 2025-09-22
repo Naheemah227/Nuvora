@@ -4,63 +4,40 @@
       <h2>Frequently Asked Questions</h2>
       <p>Find answers to the most common questions below</p>
 
-
-      <details class="w-100 h-100  p-4  text-center" >
-        <summary class="">How do I place an order </summary>
-        <p class="p-5">"You can place an order by selecting products and adding them to your cart. Then proceed to checkout." ,</p>
+      <details class="w-100 h-100 p-4 text-center">
+        <summary class="">How do I place an order</summary>
+        <p class="p-5">
+          "You can place an order by selecting products and adding them to your
+          cart. Then proceed to checkout." ,
+        </p>
       </details>
 
-      
-      <details class="w-100 h-100  p-4 text-center" >
-        <summary class="">What payment methods are available? </summary>
-        <p class="p-5">"We accept all major credit cards, debit cards,PayPal or Transfers</p>
+      <details class="w-100 h-100 p-4 text-center">
+        <summary class="">What payment methods are available?</summary>
+        <p class="p-5">
+          "We accept all major credit cards, debit cards,PayPal or Transfers
+        </p>
       </details>
 
-      
-      <details class="w-100 h-100  p-4 text-center" >
-        <summary class="">How long will it take to recieve my order after making payment </summary>
-        <p class="p-5">It take typically three to five days for delivery after payment has been made ,Location also varies</p>
+      <details class="w-100 h-100 p-4 text-center">
+        <summary class="">
+          How long will it take to recieve my order after making payment
+        </summary>
+        <p class="p-5">
+          It take typically three to five days for delivery after payment has
+          been made ,Location also varies
+        </p>
       </details>
 
-      
-      <details class="w-100 h-100  p-4  text-center" >
-        <summary class=""> Can i pay on Delivery  </summary>
-        <p class="p-5"> No</p>
+      <details class="w-100 h-100 p-4 text-center">
+        <summary class="">Can i pay on Delivery</summary>
+        <p class="p-5">No</p>
       </details>
-
-
-      <div class="faq-list">
-        <div v-for="(item, index) in faqs" :key="index" class="faq-item">
-          <div class="question" @click="toggle(index)">
-            <h4>{{ item.question }}</h4>
-            <span class="icon">{{ activeIndex === index ? "-" : "+" }}</span>
-          </div>
-          <transition name="slide">
-            <div v-show="activeIndex === index" class="answer">
-              <p>{{ item.answer }}</p>
-            </div>
-          </transition>
-        </div>
-      </div>
     </div>
   </section>
 </template>
 
-<script setup>
-// import { ref } from "vue";
-
-// const faqs = [
-//   { question: "How do I place an order?", answer: "You can place an order by selecting products and adding them to your cart. Then proceed to checkout." },
-//   { question: "What payment methods are available?", answer: "We accept all major credit cards, debit cards, and PayPal." },
-//   { question: "Can I track my order?", answer: "Yes, once your order is shipped, you will receive a tracking number via email." },
-//   { question: "What is your return policy?", answer: "We offer a 30-day return policy on all items in original condition." }
-// ];
-
-// const activeIndex = ref(null);
-// function toggle(index) {
-//   activeIndex.value = activeIndex.value === index ? null : index;
-// }
-</script>
+<script setup></script>
 
 <style scoped>
 .faq-section {
@@ -118,38 +95,38 @@
 }
 
 /* Smooth slide-down animation */
-.slide-enter-active, .slide-leave-active {
+.slide-enter-active,
+.slide-leave-active {
   transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
-.slide-enter-from, .slide-leave-to {
+.slide-enter-from,
+.slide-leave-to {
   max-height: 0;
   opacity: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-.slide-enter-to, .slide-leave-from {
+.slide-enter-to,
+.slide-leave-from {
   max-height: 500px; /* enough for most answers */
   opacity: 1;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}   
+}
 
 details {
-       background: var(--primary-green);
-
+  background: var(--primary-green);
 }
- details p {
+details p {
   font: optional;
   font-size: large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   max-height: 500px
-
- }
-
-
-details summary {
-     color: var(--accent-gold);
-     background: var(--primary-green);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-height: 500px;
 }
 
+details summary {
+  color: var(--accent-gold);
+  background: var(--primary-green);
+}
 </style>

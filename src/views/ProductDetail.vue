@@ -8,6 +8,10 @@
     </div>
 </template> -->
 <script setup>
+
+import { useCartStore } from "@/stores/cart";
+
+const cart = useCartStore();
 import { useRoute } from "vue-router";
 import { products } from "@/data/product.js"; // ✅ correct file name
 import AddToCartBtn from "@/components/common/AddToCartBtn.vue";
@@ -26,7 +30,8 @@ const product = products.find((p) => p.id === Number(productId));
       <h1>{{ product.name }}</h1>
       <p class="price">{{ product.price }}</p>
       <p>{{ product.description || "No description available." }}</p>
-      <AddToCartBtn/>
+  <AddToCartBtn @click="cart.addToCart(product)" />
+
     </div>
   </div>
 

@@ -24,6 +24,23 @@
 </template>
 
 <script setup>
+// import { ref, onMounted } from "vue";
+// import { collection, getDocs } from "firebase/firestore";
+// import { db } from "@/firebase";
+
+// const products = ref([]);
+// const loading = ref(true);
+
+// onMounted(async () => {
+//   const querySnapshot = await getDocs(collection(db, "products"));
+//   products.value = querySnapshot.docs.map(doc => ({
+//     id: doc.id,
+//     ...doc.data()
+//   }));
+//   loading.value = false;
+// });
+
+
 
 defineProps ({
 

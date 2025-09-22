@@ -29,22 +29,22 @@
       <div class="about-box d-flex gap-5 justify-content-center mx-2 my-4">
         <div class="text-center">
           <p>
-            <span>5+</span> <br />
-            Categories
+            <span>50+</span> <br />
+            SkinCare
           </p>
           <div class="line"></div>
         </div>
         <div class="text-center">
           <p>
             <span>100+</span><br />
-            Categories
+        FaceCare 
           </p>
           <div class="line"></div>
         </div>
         <div class="text-center">
           <p style="">
             <span>20+</span> <br />
-            Categories
+           HairCare
           </p>
         </div>
       </div>

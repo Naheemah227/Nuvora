@@ -3,22 +3,22 @@
     <h3 class="my-5">Meet Our Team</h3>
     <div class="team-grid">
       <div class="team-card">
-        <img src="https://via.placeholder.com/150" alt="Team Member" />
+        <img :src="image" alt="Team Member" />
         <h4> Noimot Adedasola</h4>
         <p>Founder & CEO</p>
       </div>
       <div class="team-card">
-        <img src="https://via.placeholder.com/150" alt="Team Member" />
+        <img :src="image" alt="Team Member" />
         <h4>Noimot Adedasola </h4>
         <p>Creative Director</p>
       </div>
       <div class="team-card">
-        <img src="https://via.placeholder.com/150" alt="Team Member" />
+        <img :src="image" alt="Team Member" />
         <h4>Noimot Adedasola</h4>
         <p>Marketing Lead</p>
       </div>
       <div class="team-card">
-        <img src="https://via.placeholder.com/150" alt="Team Member" />
+        <img :src="image" alt="Team Member" />
         <h4> Noimot Adedasola</h4>
         <p>Product Developer</p>
       </div>
@@ -28,6 +28,8 @@
 </template>
 
 <script setup>
+// import image from "../../assets/images/me.jpg"
+import image from "@/assets/images/my-image.jpeg"
 
 </script>
 

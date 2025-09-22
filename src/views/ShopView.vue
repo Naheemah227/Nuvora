@@ -5,6 +5,10 @@
   </div>
 </template>
 <script setup>
+
+
+
+
 import Leaf from "@/components/common/Leaf.vue";
 
 import ProductSection from "@/components/section-folder/ProductSection.vue";

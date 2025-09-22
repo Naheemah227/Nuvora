@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img :src="content.img" alt="" />
+    <img :src="content.img" alt=""/>
     <h4>{{ content.title }}</h4>
     <p>{{ content.des }}</p>
   </div>
@@ -28,7 +28,9 @@ defineProps({
   width: 220px;
   height: 220px;
   border-radius:150px ;
-   transition: transform 0.4s ease;
+   /* transition: transform 0.4s ease; */
+   transition: 0.4s ease-in-out;
+
 }
 h4 {
   margin-top: 10px;

@@ -19,6 +19,7 @@ export const products = [
     price: "₦5000",
     img: facecream,
     description: "Provides hydration, nourishment, and can target concerns like dryness, dullness, or aging depending on the formula."
+   
   },
   {
     id: 2,
@@ -105,3 +106,12 @@ export const products = [
      description:"Protects the skin from harmful UV rays, preventing sunburn, premature aging, and reducing skin cancer risk."
   },
 ];
+
+
+export async function uploadProducts() {
+  const productsCol = collection(db, "products");
+  for (let p of products) {
+    await addDoc(productsCol, p);
+  }
+  console.log("Products uploaded!");
+}

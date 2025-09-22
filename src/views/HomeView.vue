@@ -30,8 +30,10 @@
     </section>
 
     <section>
-      <Footer />
+      <Footer/>
     </section>
+
+   
   </div>
 </template>
 

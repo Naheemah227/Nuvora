@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
 <button>Add to cart</button>
     </div>
@@ -22,4 +22,31 @@ button:hover {
   transform: translateY(-3px); /* subtle lift effect */
 }
 
+</style> -->
+
+<template>
+  <button @click="handleClick">Add to cart</button>
+</template>
+
+<script setup>
+
+const emit = defineEmits(["click"]);
+
+const handleClick = () => {
+  emit("click"); // emits to parent
+};
+</script>
+
+<style scoped>
+button {
+  background: green;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: darkgreen;
+}
 </style>

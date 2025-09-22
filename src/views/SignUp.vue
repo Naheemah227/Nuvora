@@ -6,22 +6,22 @@
       <form>
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Enter your full name" v-model="username"/>
+          <input type="text" id="name" placeholder="Enter your full name" v-model="loginInput.username"/>
         </div>
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" v-model="email" />
+          <input type="email" id="email" placeholder="Enter your email" v-model="loginInput.email" />
         </div>
 
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password"  v-model="password"/>
+          <input type="password" id="password" placeholder="Enter your password"  v-model="loginInput.password"/>
         </div>
 
         <div class="form-group">
           <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" placeholder="Confirm your password" />
+          <input type="password" id="confirm-password" placeholder="Confirm your password"  v-model="loginInput.confirmPassword"/>
         </div>
 
         <button type="submit" class="btn"  @click="SubmitForm">Sign Up</button>
@@ -47,6 +47,8 @@ const loginInput = reactive({
   username: "",
   email: "",
   password: "",
+
+
 });
 
 const confirmPassword = ref("");
